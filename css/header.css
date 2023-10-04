@@ -1,0 +1,514 @@
+/*
+/* ------------------------- */
+/* overlay */
+/* ------------------------- */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(3, 1, 15, 0.658);
+    z-index: 2;
+    cursor: pointer;
+
+  }
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    font-size: 50px;
+    background-color: white;
+    color: blue;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+/* ----------------Background animado-------------------------------*/
+body>header{
+    /*
+    background-image:  url("/imagenes/cambio.png"),url("/imagenes/header.jpg");
+    background-size: 100% 100%,100% auto;
+    background-repeat: no-repeat, no-repeat;
+   */
+   
+    background-image:  url("../imagenes/header.jpg");
+    background-size: 100% auto;
+    background-repeat:  no-repeat;
+   
+    opacity:1,1;
+
+    animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s  linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s   linear infinite;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+}
+
+@keyframes animatedBackground {
+    from { background-position:100% 100%, 100% 0; }
+    to { background-position:100% 100% ,100% 100% ; }
+}
+
+
+/* -----Fondo informacion--------*/
+
+body>header>#usalo{
+    background:white;
+    border-color:#9D79B1;
+    border-width: 5px;
+    border-style: solid; 
+
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto auto auto auto auto auto ;
+}
+
+/* ----- Reglas para responsive --------*/
+body>header>#usalo>.Rs,body>header>#clr{
+    display:none;
+}
+/* ----------------Animación problemas con las matemáticas------------*/
+/* ---¿ Problemas con las matemáticas?---------*/
+body>header>#usalo>#problemas{
+    margin-top: 5%;
+    padding-left: 35px;
+    color:rgb(87,35,100);
+    font-size: 2em;
+}
+/* ---Súmate lo hace fácil---------*/
+body>header>#usalo>#soluciona{
+
+    padding-top: 8px;
+    color:rgb(255,165,64);
+    font-size: 2em;
+    text-align: center;
+    animation:solution 3.14s  linear ;
+    animation:solution 3.14s  linear ;
+    -ms-animation: solution 3.14s  linear;
+    -moz-animation: solution 3.14s  linear;
+    -webkit-animation: solution 3.14s  linear;
+}
+
+@keyframes solution {
+
+    0% { color: rgba(255,165,64, 0); }
+    25% { color: rgba(255,165,64, 0.2); }
+    50% { color:rgba(255,165,64, 0.5); }
+    75% { color:rgba(255,165,64, 35, 0.7); ; }
+    100% { color: rgba(255,165,64,100, 1); ; }
+  
+}
+/* ---Items---------*/
+
+body>header>#usalo>.solucion{
+   
+        padding-top:5px ;
+        padding-bottom:5px ;
+        color: rgb(87,35,100);
+        text-align: left; 
+        padding-left: 100px;
+        animation:mueve 3.14s  linear ;
+        animation:mueve 3.14s  linear ;
+        -ms-animation: mueve 3.14s  linear;
+        -moz-animation: mueve 3.14s  linear;
+        -webkit-animation: mueve 3.14s  linear;
+}
+
+@keyframes mueve {
+
+    0% { text-align: left; padding-left: 15px; }
+    20% { text-align: left; padding-left: 30px; }
+    40% { text-align: left; padding-left: 45px; }
+    60% { text-align: left; padding-left: 70px; }
+    80% { text-align: left; padding-left: 85px; }
+    100% { text-align: left; padding-left: 100px; }   
+}
+/* ---Inscribete---------*/
+body>header>#usalo>#inscribete{
+    padding-bottom:10px ;
+    color: rgb(87,35,100);
+    text-align: center;
+}
+
+
+/*-------Formulario de inscripción ----------------*/
+
+body>header>#contacto{
+
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto auto auto auto auto auto ;
+
+    
+    background:white;
+    border-color:#9D79B1;
+    border-width: 5px;
+    border-style: solid; 
+
+}
+
+/*---Iniciemos--*/
+
+body>header>#contacto>h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-size: 45px;
+}
+
+/* --- cursos responsive -- */
+body>header>#contacto>#cc{
+    display: none;
+
+}
+
+/*---Mandela--*/
+
+body>header>#contacto>h4{
+    letter-spacing: -1px;
+    font-weight:bold;
+    font-size:20px;
+    color: #9D79B1;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*---Identificación--*/
+
+body>header>#contacto>#identificacion{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/*---formato a los inputs--*/
+
+body>header>#contacto>input{   
+
+    border-bottom:1px solid #9D79B1;
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    background:white;
+    width: 80%;    
+    color:#9D79B1;
+    font-size:18px;
+    margin-left:10% ;
+    outline: none;
+
+}
+
+body>header>#contacto>input:focus{   
+    border-bottom:3px solid #9D79B1;
+}
+
+body>header>#contacto>#identificacion>input{   
+
+    /*border: 2px solid #9D79B1;*/
+    border-bottom:1px solid #9D79B1;
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    background:white;
+    width: 40%;    
+    color:#9D79B1;
+    font-size:18px;
+    outline: none;
+}
+
+body>header>#contacto>#identificacion>input:focus{   
+    border-bottom:3px solid #9D79B1;
+}
+
+/* -- formato al select de los cursos --*/
+
+body>header>#contacto>#cur{   
+
+    margin-left: 10%;
+    margin-top: 8px;
+    border-bottom:1px solid #9D79B1;
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    background:white;
+    width: 80%;    
+    color:#9D79B1;
+    font-size:18px;
+    outline: none;
+
+}
+
+/*---formato al boton--*/
+
+body>header>#contacto>#contact-submit{   
+
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(0,158,226);
+    color:white;
+    border-radius: 8px;
+    font-size:18px;
+
+}
+
+
+
+/*Responsive*/
+
+
+/*----Pantalla de tablets----*/
+
+@media screen and (max-width:1500px ) {
+   
+    
+/* -----Fondo informacion--------*/
+
+body>header>#usalo{
+    background:white;
+    border-color:#9D79B1;
+    border-width: 5px;
+    border-style: solid; 
+
+    border-radius: 15px;
+    margin-top: 15%;
+    margin-bottom: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto auto auto auto auto auto ;
+}
+
+/* ---¿ Problemas con las matemáticas?---------*/
+body>header>#usalo>#problemas{
+    margin-top: 2%;
+ 
+    padding-right: 10px;
+    color:rgb(87,35,100);
+    font-size: 1.5em;
+}
+/* ---Súmate lo hace fácil---------*/
+body>header>#usalo>#soluciona{
+
+    padding-top: 2px;
+    color:rgb(255,165,64);
+    font-size: 1.5em;
+    text-align: center;
+}
+/* ---Cambio tamaño de las imagenes---*/
+
+body>header>#usalo>img{
+    width: 120px;
+    height: 80px;
+}
+
+/*-------Formulario de inscripción ----------------*/
+
+body>header>#contacto{
+
+    border-radius: 15px;
+    margin-top: 15%;
+    margin-bottom: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto auto auto auto auto auto ;
+
+    
+    background:white;
+    border-color:#9D79B1;
+    border-width: 5px;
+    border-style: solid; 
+
+}
+
+}
+
+/*----Pantalla de celular----*/
+
+@media screen and (max-width:1148px ) {
+ 
+    body>header{
+ 
+        background-image:  url("/imagenes/header.png");
+        background-size: 100% auto;
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: stretch;
+    }
+
+    body>header>#usalo{
+       
+        background:white;
+        border-color:#9D79B1;
+        border-width: 5px;
+        border-style: solid; 
+    
+        border-radius: 15px;
+        margin-top: 18%;
+        margin-bottom: 6%;
+        margin-left: 4%;
+        margin-right: 4%;
+
+        padding-right: 5%;
+        padding-left: 10%;
+
+        font-size: 15px;
+    }
+
+    /* ---¿ Problemas con las matemáticas?---------*/
+    body>header>#usalo>#problemas{
+    margin-top: 2%;
+    padding-left: 2px;
+    color:rgb(87,35,100);
+    font-size: 1.5em;
+    
+    }
+
+
+    body>header>#usalo>.Rs{
+        
+        display:flex;
+        flex-direction: column;
+    }
+
+    body>header>#usalo>h3{
+        
+        padding-top: 10px;
+        color: rgb(87,35,100);
+        font-size: 18px;
+    }
+
+    body>header>#usalo>button{
+        
+        background-color: rgb(0,158,226);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        color:white;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top:5px;
+        border-radius: 5px;
+        font-size: 20px;
+        
+    }
+
+    /* --- cursos responsive -- */
+    body>header>#contacto>#cc{
+    display: flex;
+
+        }
+
+  /* --- cursos responsive -- */
+    body>header>#clr>h1{
+ 
+        color:rgb(255,165,64);
+        font-size:2.5em;
+        padding-left:45px;
+        padding-top:12px;
+    }
+
+    body>header>#clr>.lt{
+        
+        color:#9D79B1;
+        font-size:1.9em;
+        padding-left:10px;
+        padding-top:12px;
+
+    } 
+
+    
+    body>header>#clr>div{
+
+         border:2px solid #9D79B1;
+         border-radius:5px;
+         margin-top:4px;
+         padding-left:10px;
+         padding-right:10px;       
+         padding-bottom:8px;
+
+    
+            }
+    
+
+
+    /* ----------------Animación problemas con las matemáticas------------*/
+        /* ---¿ Problemas con las matemáticas?---------*/
+        body>header>#usalo>#problemas{
+            margin-top: 5%;
+            padding-left: 2%;
+            color:rgb(87,35,100);
+           
+        }
+        /* ---Items---------*/
+
+        body>header>#usalo>.solucion{
+        
+            display:none;
+        }
+
+
+        body>header>#usalo>#inscribete{
+        
+            display:none;
+
+        }
+
+
+
+            /* ocultar inicialmente el registro */
+            body>header>#contacto{
+
+                display: none;
+            
+            }
+
+        }

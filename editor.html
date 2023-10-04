@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Prueba tu codigo</title>
+        <link rel="stylesheet" type="text/css" href="CSS.css">
+
+        <style type="text/css">
+        body {
+         display: grid;
+         grid-template-columns:50% 50%;
+         grid-template-rows: 100vh ;
+
+         }
+        </style>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <id ="visor"> <TEXTAREA cols=20 rows=10 id="myTextarea">
+        </TEXTAREA></id>
+        <id ="visor">muestro</id>
+
+
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/base16-dark.css">
+
+        <script>
+  
+                var editor = CodeMirror.fromTextArea(myTextarea, {
+                lineNumbers: true
+                });
+
+        </script>
+     
+    </body>
+</html>

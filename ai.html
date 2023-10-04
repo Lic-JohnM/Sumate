@@ -1,0 +1,177 @@
+<html> 	  	 
+  <head> 	
+    <meta charset = "utf-8"> 
+    <title>Súmate</title>
+    <style>
+
+/* Fuente general de todo el documento */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+            * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            }
+
+          body{
+         
+
+             background-color:white;
+  
+
+            }
+
+            body>#IIA{
+                background-color: white;
+                border-radius: 5px;
+                border-style: solid;
+                border-color:rgb(87,35,100) ;
+                height: 80vh;
+                text-align: center;
+   
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 20% 80%;
+                
+            }
+
+            body>#IIA>#avance{
+              background-color: rgb(177 , 206, 240);
+              margin-bottom:10%;
+              margin-top:10%;
+              margin-left:30%;
+              margin-right:30%;
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: repeat(10,1fr);
+              justify-items: center stretch;
+              align-items: center stretch;
+                }
+
+            body>#IIA>#proceso{
+              border-left-width: 2px;
+              border-left-style: solid;
+              border-left-color:rgb(87,35,100) ;
+              
+              
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 30% 20% 35% 15%;
+              justify-items: center stretch;
+              align-items: center stretch;
+                }
+
+            body>#IIA>#proceso>#encabezado{
+              font-size: larger;
+              display: grid;
+              grid-template-rows: 80% 20%;
+              align-items: center stretch;
+              justify-items: center stretch;
+            }
+
+            body>#IIA>#proceso>#encabezado>#cronometro{
+              background-color:rgb(237 , 221, 252);
+              border-radius: 50%;
+              margin-left: 44%;
+                margin-right: 44%;
+                margin-top: 2%;
+                align-items: center;
+                justify-content: center;
+                display: grid;
+                font-size: 35px;
+            }
+
+            body>#IIA>#proceso>#problema{
+              font-size: xx-large;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }      
+            
+            body>#IIA>#proceso>#respuestas{
+              display: grid;
+              grid-template-columns: 50% 50%;
+              grid-template-rows: 50% 50%;
+
+            }     
+
+            body>#IIA>#proceso>#respuestas>h1{
+                
+                background-color:rgb(237 , 221, 252);
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                padding-top: 2%;
+                border-radius: 2px;
+          
+          
+            }    
+
+            body>#IIA>#proceso>#respuestas>h1:hover{
+              background-color:rgb(210, 167, 255);
+            }
+            
+            body>#IIA>#proceso>#continuar{
+             
+              display: flex;
+              align-items: center;
+              justify-content: right;
+              background-image: url("imagenes/logotipo.png");
+              background-repeat: no-repeat;
+              background-position: 90% 10%;
+            }     
+
+            body>#IIA>#avance>div{              
+              border-top-style: solid;
+              border-width: 0.5px;
+              border-color: rgb(0 , 158, 226);
+           }     
+
+           body>#IIA>#resultados>#tr>table{              
+              width: 90%;
+      
+              text-align: center;
+              border-collapse: collapse;
+           }     
+           body>#IIA>#resultados>#tr>table>tbody>#encabezado{              
+            background-color:rgb(210, 167, 255);
+            padding-top:1%;
+            padding-bottom: 1%;
+            
+           }    
+           body>#IIA>#resultados>#tr>table>tbody>tr:nth-child(even){background-color: #f2f2f2}
+           body>#IIA>#resultados>#tr>table>tbody>tr>td{              
+            padding-top:1%;
+            padding-bottom: 1%;
+            
+           }                   
+    
+
+
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/js/ia.js"></script>
+      
+  </head>
+  <body> 	 
+
+
+    <div id="IIA">
+
+       <div id="avance"><div id="uno"></div><div id="dos"></div><div id="tres"></div><div id="cuatro"></div><div id="cinco"></div><div id="seis"></div><div id="siete"></div><div id="ocho"></div><div id="nueve"></div><div id="diez"></div>
+       </div>
+       <div id="proceso">
+        <div id="encabezado"><div id="cronometro">00:00</div><H1>¿ Cuál es la respuesta correcta ?</H1></div>
+        <div id="problema"><H1>2 + 2</H1></div>
+        <div id="respuestas"><H1 id="primera">4</H1><H1 id="segunda">6</H1><H1 id="tercera">8</H1><H1 id="cuarta">10</H1></div>
+        <div id="continuar"></div>
+       </div>
+        
+   
+    </div>
+       
+  </body> 
+</html> 	 

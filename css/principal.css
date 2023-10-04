@@ -1,0 +1,146 @@
+/* Plantilla principal de los estilos de la página de Sumate*/
+
+/* Fuente general de todo el documento */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+	padding:0;
+}
+
+/**-------------------------------Barra de Navegación----------------------------------------------------------------*/
+
+nav {
+
+    width:100%;  
+    background:rgba(0,158,226,0.5);
+    color: white;
+    display:grid ;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 7.5vh;
+    position: fixed;
+    align-items: center;
+
+    }
+
+/*------------------Ubicacion del logo---------------------*/
+body>nav>#logo{
+    display: flex;
+    justify-content: center;
+   }
+
+/*---- Ocultar barra de lista para mobiles ---*/
+body>nav>#logo>#signos{
+    display: none;
+    
+ }
+
+/*-------------------Menu IO---------------------------------*/
+nav>#IO{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav>#IO>#cursos{
+    margin-left: 5px;
+}
+
+nav>#IO>#seguir{
+    margin-left: 5px;
+}
+/*-------------------Menu Ingreso-----------------------------*/
+nav>#ingresa{
+    
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+   }
+/*-------Propiedades de cada boton---------------*/
+nav>#IO>a,nav>#ingresa>a{
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    background:rgb(0,158,226);
+    color: white;  
+}
+/*-------Pasar por encima el mouse---------------*/
+nav>#IO>a:hover{
+    background-color: white;
+    color:rgb(0,158,226);
+}
+
+nav>#ingresa>a:hover{
+    background-color: white;
+    color:rgb(0,158,226);
+}
+
+
+/*Responsive*/
+
+
+/*----Pantalla de tablets----*/
+
+@media screen and (max-width:1500px ) {
+
+    /*---Barra de Navegacion---*/
+
+    nav {
+
+        width:100%;  
+        background:rgb(0,158,226);
+        display:grid ;
+        grid-template-columns: 20% 55% 25%;
+        grid-template-rows: 10vh;
+        position: fixed;
+        }
+}
+
+/*----Pantalla de celular (variación de 750px a 1148px)----*/
+
+@media screen and (max-width:1148px ) {
+
+
+    /*---Letra de la fuente---*/
+    body {
+        font: 400 10px Lato, sans-serif;
+        letter-spacing: 4px;
+        }
+    /*---Ubicación boton responsive---*/
+    body>nav>#logo>#signos{
+        
+        display: flex;
+        color:white;
+        border:0px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    /*---Creación del menu para moviles---*/
+	nav {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+		width:70px;
+		height:60px;
+		margin:0;
+        position: fixed; 
+        border-bottom-right-radius: 35px;
+    }
+    
+    /* -- Ocultar elementos inicialmente -- */
+    /*--- logo, Menu IO-,ingreso ------------ */
+    nav>#logo>#logotipo,nav>#IO,nav>#ingresa,nav>#cur{
+      display: none;
+    }
+
+
+
+
+
+}

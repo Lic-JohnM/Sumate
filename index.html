@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>SÚMATE</title>
+  <meta name="description" content="Sitio WEB enseñanza de Matemáticas">
+  <meta name="author" content="John Muñoz">
+  <meta name="viewport" content="initial-scale=1">
+
+  <link rel="icon" href="imagenes/isotipo.jpg" type="image/jpg" sizes=" 16*16">
+  <link rel="stylesheet" href="css/principal.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/sumate.css"/>
+  <link rel="stylesheet" href="css/cursos.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="js/navegacion.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+
+</head>
+
+<body>
+
+  <div id="overlay" onclick="off()">
+    <div id="text">
+    <div id="imagenes">Hola</div>
+    <div id="login">Hola2</div>
+    </div>
+  </div>
+    <nav>
+
+        <div id ="logo"><img id='logotipo' src="imagenes/logotipo.png" width="150px" height="50px">
+                      <canvas id='signos' width='60' height='45'></canvas>
+        </div>
+
+        <div id="IO">
+          
+          <a  id="funciona"> COMO FUNCIONA </a>
+          <a  id="cursos"> CURSOS </a>
+          <a  id="seguir"> SIGUENOS </a>
+      </div>
+
+      <div id="ingresa" > <a> INGRESA </a> </div>
+      
+    </nav>
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+
+       
+      }
+      
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+
+      }
+      </script>
+
+
+
+    <header>
+
+
+        <div id="usalo">          
+
+          <h3 id="problemas">¿PROBLEMAS CON LAS MATEMÁTICAS?</h3>
+
+          <h3 id="soluciona"> Súmate lo hace fácil </h3>
+
+          <h3 class="solucion"> Pregunta con seguridad </h3>
+
+          <img class="solucion" src="imagenes/im1.png" width="250px" height="120px">
+
+          <h3 class="solucion"> Vívelo en tu vida </h3> 
+
+          <img class="solucion" src="imagenes/libro.png" width="150px" height="100px">        
+
+          <h2 id="inscribete"> Que esperas ... Registrate  </h2>
+
+
+          <!-- Responsive -->
+
+          <h3 class="Rs"> 1. Conoce los cursos que tenemos para ti </h3>
+
+          <button class="Rs" id="cr" >Cursos</button>
+
+          <h3 class="Rs">2. Registrate y te enviaremos un diagnostico de forma gratuita</h3> 
+
+          <button class="Rs" id="rg" >Registro</button>
+
+          <h3 class="Rs">3. Clasificamos las actividades de acuerdo con tu nivel, nuestros docentes estan listos para ayudarte. </h3>         
+
+       </div>
+
+       <div id="contacto">
+                            
+
+          <h3>REGISTRATE</h3>
+
+          <h4 id = "apoyo">Te contactaremos lo más pronto posible. </br></h4>
+
+          <div id="identificacion">
+
+            <input  id="nombre" type="text"   placeholder="Nombre">
+            <input  id="apellido" type="text"  placeholder="Apellido">
+
+          </div>
+          <input  id="telefono" type="text"   placeholder="teléfono">
+          <input  id="email" type="text" "  placeholder="e-mail">      
+
+          <select  id="cur" >
+            <option id="temp"> Curso </option>
+            <option value="volvo">Aritmética</option>
+            <option value="saab">Álgebra</option>
+            <option value="opel">Probabilidad y Estadística</option>
+            <option value="audi">Trigonometria</option>
+            <option value="audi">Cálculo</option>
+          </select>
+                  
+          
+          <button type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+          <h4>Siempre parece imposible hasta que se hace</br> <cite>Nelson Mandela</cite></h4>
+
+         </div> 
+
+         <div id='clr'>
+
+          <H1>CURSOS</h1>
+
+            <div id='ari'><h1 class='lt'>Aritmética</h1><h2 > Quieres conocer como funcionan las fracciones, porcentajes y decimales. Cuando tienes
+              una operación quieres saber cuál se opera primero, así como el uso correcto de la ley de signos, pregunta por este curso. </h2></div>
+            <div id='alg' ><h1 class='lt'>Álgebra</h1><h2 > ¿Quieres manejar las variables a la perfección? Usalas en expresiones algebraicas, factorizalas y operalas.
+              Si quieres aprender estos conceptos y muchas más este curso es para ti.  </h2></div>
+            <div id='cal' ><h1 class='lt'>Cálculo</h1><h2 > Si viste las funciones y no las entendiste o tienes dudas de ellas, este curso es para ti. </h2></div>
+            <div id='geo'><h1 class='lt'>Geometría</h1><h2 > ¿ Conoces la diferencia entre un poligono y un poliedro?
+              ¿ Reconoces la diferencia entre área y volumen, así como cuantos metros equivalen a 1 kilometro. ?
+              Si quieres resolver estas preguntas y muchas más, este es curso es para ti.  </h2></div>
+            <div id='trg' ><h1 class='lt'>Trigonometría</h1><h2 >¿Quieres manejar a la perfección el teorema de pitagoras, seno y coseno?
+              Si deseas manejar este mundo geometrico y algebraico este es tu curso. </h2></div>
+            <div id='eyp' ><h1 class='lt'>Estadística y probabilidad</h1><h2 > ¿ Sabes crear tablas de frecuencias y diagramas estadísticos ?
+              ¿ Quieres recolectar información con las herramientas precisas ?
+              Si quieres manejar la información para expresarte con ella, bienvenido al curso de estadistica.   </h2></div>
+
+         </div>
+
+    </header>
+
+    <h1 id="s1" style="background-color: rgb(0,158,226);text-align:center;color:rgb(255,255,255);padding-top: 35px;">COMO FUNCIONA</h1>
+  
+    <div id="sumate">
+
+        <div id="reg" >
+          <div>
+            <h1> Cursos </h1>
+            <br>
+            <H3 align="justify"> Te ofrecemos cursos aplicados a la realidad y a la academia, apoyados de un sistema de inteligencia artificial para reconocer tus habilidades y profundizar en tus debilidades. Contactanos para iniciar... </H3>
+          </div>
+          <img src="imagenes/registro.png" width="250px" height="150px" style="padding-bottom: 30px;">
+        </div>
+
+        <div id="libre">
+          <div>
+            <h1> Contenido organizado y libre </h1>
+            <br>
+            <H3 align="justify"> Nuestro contenido esta ordenado desde las habilidades más basicas a las más complejas, empleando herramientas libres que sirven todo el tiempo.  </H3>  
+          </div>
+          <img src="imagenes/aula.png" width="250px" height="150px" style="padding-bottom: 30px;">
+        </div>
+
+        <div id="comunicacion">
+          <div>
+            <h1>¿ Necesitas un profe ?</h1>
+            <br>
+            <H3 align="justify">Si tienes álguna duda en el desarrollo de los cursos tenemos un franja de asesoria para que puedas resolver tus inquietudes. 
+            </H3>
+          </div>
+            <img src="imagenes/profe.png" width="250px" height="150px" style="padding-bottom: 40px;padding-left: 20px;">
+        </div>
+
+    </div>
+
+    
+  
+    <h1 id="s2" style="text-align:center;color:rgb(87,35,100);padding-top: 10px;">HAZ CLIC SOBRE EL CURSO QUE TE INTERESA</h1>
+
+    <div id="cursos">
+      
+      <div id="">
+        <div>
+          <h1>Aritmética</h1>
+          <br>
+          <H4>¿Que son las fracciones?</H4>
+          <H4>¿Que relación tiene con los porcentajes y decimales?</H4>
+          <H4>¿Cuál operación debemos hacer primero?</H4>    
+          <H4>¿Cuándo usar la ley de Signos?</H4>       
+          <h4>Si quieres responder a estas y más preguntas, es tu curso</h4>
+        </div>
+    
+      
+      </div>
+
+      <div id="">
+        <div>
+          <h1>Álgebra</h1>
+          <br>
+          <H4>¿Quieres manejar las variables a la perfección? </H4>  
+          <H4>Usalas en expresiones algebraicas, factorizalas y operalas. </H4>
+          <H4>¿Sabias que existen los números irracionales? </H4>
+          <H4>Si quieres aprender estos conceptos y muchas más este curso es para ti.  </H4>       
+        </div>
+       
+      </div>
+
+      <div id="">
+        <div>
+          <h1>Cálculo</h1>
+          <br>
+          <H4>¿ Quieres manejar la ecuación de la recta ?  </H4>
+          <H4>¿ Quieres reconocer cuál es la diferencia entre un máximo y un mínimo ?  </H4>
+          <H4>¿ Entiendes cuál es el concepto de una derivada ?  </H4>
+          <H4> Entra a este curso si quieres aprender a entender las funciones y modelar el mundo.  </H4>       
+
+        </div>
+         
+      </div>
+
+      <div id="">
+        <div>
+          <h1>Trigonometria</h1>
+          <br>
+          <H4>¿Quieres manejar a la perfección el teorema de pitagoras?</H4>
+          <H4>¿Sabes diferenciar el teorema del seno al teorema de pitagoras?</H4>
+          <H4>Si deseas manejar este mundo geometrico y algebraico este es tu curso.</H4>
+
+
+        </div>
+     
+      </div>
+
+      <div id="">
+        <div>
+          <h1>Estadística</h1>
+          <br>
+          <H4> ¿ Sabes crear tablas de frecuencias y diagramas estadisticos ?  </H4>
+          <H4> ¿ Quieres recolectar información con las herramientas precisas ?  </H4>
+          <H4> Si quieres manejar la información para expresarte con ella, bienvenido al curso de estadistica. </H4>
+
+        </div>
+      
+      </div>
+
+      
+      <div id="">
+        <div>
+          <h1>Geometría</h1>
+          <br>
+          <H4> ¿ Conoces la diferencia entre un poligono y un poliedro? </H4>
+          <H4> ¿ Reconoces la diferencia entre área y volumen, así como cuantos metros equivalen a 1 kilometro. ? </H4>
+          <H4> Si quieres resolver estas preguntas y muchas más, este es curso es para ti.</H4>
+
+        </div>
+    
+      </div>
+
+    </div>
+
+
+<footer id="contactar">
+
+  
+          <div id="redes">
+            <a id="facebook" class="fa fa-facebook"></a>
+            <a href="https://co.pinterest.com/sumatematematicas/boards/" id="pinteres" class="fa fa-pinterest"></a>
+            <a  id="whatsapp" class="fa fa-whatsapp"></a> 
+            <a  id="youtube" class="fa fa-youtube"></a> 
+          </div>
+          <h4> email: info@sumatematematicas.com</h4>
+          <h4> Acerca de nosotros </h4>
+          <h5>© SUMATE. Todos los derechos reservados.</h5>
+
+
+
+  </footer>
+
+
+</body>
+</html>

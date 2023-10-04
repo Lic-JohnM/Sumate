@@ -1,0 +1,256 @@
+<html> 	  	 
+  <head> 	
+    <meta charset = "utf-8"> 
+    <title>Súmate</title>
+    <style>
+
+/* Fuente general de todo el documento */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+            * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            }
+
+          body{     
+             background-color:white;
+            }
+
+            body>#PIIA{
+                background-color: white;
+                border-radius: 5px;
+                border-style: solid;
+                border-color:rgb(87,35,100) ;
+                height: 80vh;
+                text-align: center; 
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 30% 40% 30%;            
+            }
+
+
+            body>#PIIA>#Ingreso{
+                  
+
+            padding-top: 10%;
+            border-right-style: solid;
+            border-right-color:rgb(87,35,100) ;
+
+              }
+
+            body>#PIIA>#Ingreso>#cars{
+                  
+            width: 80%;
+            padding: 16px 20px;
+            margin-top: 4%;
+            margin-bottom: 5%;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+            font-size: 20px;
+            }
+
+
+            body>#PIIA>#Ingreso>#ej{
+                  
+            width: 60%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(203, 106, 228);
+            font-size: 20px;
+
+            }
+
+            body>#PIIA>#Ejercicios{
+                  
+
+            padding-top: 10%;
+            border-right-style: solid;
+            border-right-color:rgb(87,35,100) ;
+
+            display:grid;
+            grid-template-rows: repeat(21,15vh);
+            grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+            overflow-y: scroll;
+
+             }
+
+             body>#PIIA>#Editar{
+                  
+
+                  padding-top: 10%;
+ 
+      
+                    }
+
+
+                    body>#PIIA>#Editar>#ed1{
+                  
+                  width: 50%;
+                  padding: 10px 10px;
+                  margin-top:5px;
+                  margin-bottom: 5px;
+                  border: none;
+                  border-radius: 4px;
+                  background-color: rgb(203, 106, 228);
+                  font-size: 20px;
+      
+                  }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/js/ia.js"></script>
+      
+  </head>
+  <body> 	 
+
+
+    <div id="PIIA">
+
+       <div id="Ingreso">
+        <H1> Bienvenido </H1>
+        <br>
+        <H2> Escoge el pensamiento</H2>
+        <select id="cars" name="cars">
+            <option value="volvo">Númerico</option>
+            <option value="saab">Variacional</option>
+            <option value="fiat">Aleatorio</option>
+            <option value="audi">Metrico</option>
+        </select>
+
+ 
+
+        <H2> Escoge la temática </H2>
+
+        <select id="cars" name="cars">
+            <option value="volvo">Suma de tres cifras</option>
+            <option value="saab">Suma de cuatro cifras</option>
+            <option value="fiat">Suma de cinco cifras</option>
+            <option value="audi">Suma de seis cifras</option>
+        </select>
+     
+
+        <H2> Escoge el ejercicio </H2>
+          <select id="cars" name="cars">
+             <option value="volvo">1</option>
+             <option value="saab">2</option>
+             <option value="fiat">3</option>
+             <option value="audi">4</option>
+             <option value="volvo">5</option>
+             <option value="saab">6</option>
+             <option value="fiat">7</option>
+             <option value="audi">8</option>
+             <option value="volvo">9</option>
+             <option value="saab">10</option>
+             <option value="fiat">11</option>
+             <option value="audi">12</option>
+             <option value="volvo">13</option>
+             <option value="saab">14</option>
+             <option value="fiat">15</option>
+             <option value="audi">16</option>
+             <option value="volvo">17</option>
+             <option value="saab">18</option>
+             <option value="fiat">19</option>
+             <option value="audi">20</option>
+          </select>
+     
+          <button id="ej">Mostrar</button>
+
+          
+        </div>
+
+
+
+       <div id="Ejercicios">
+       
+        
+        <H2> # </H2>
+        <H2> Ejercicio </H2>
+        <H2> C </H2>
+        <H2> I </H2>
+        <H2> E </H2>
+        <H2> D </H2>
+ 
+     <!--Prueba-->
+
+     <H2> 1 </H2>
+     <H2> 2+2 </H2>
+     <H2> 4 </H2>
+     <H2> 2 </H2>
+     <H2> 8 </H2>
+     <H2> 10 </H2>
+
+     <H2> 2 </H2>
+     <H2> 4+5 </H2>
+     <H2> 9 </H2>
+     <H2> 4 </H2>
+     <H2> 7 </H2>
+     <H2> 2 </H2>
+
+     <H2> 3 </H2>
+     <H2> 8+5 </H2>
+     <H2> 13 </H2>
+     <H2> 2 </H2>
+     <H2> 6 </H2>
+     <H2> 7 </H2>
+
+     <H2> 4 </H2>
+     <H2> 9+7 </H2>
+     <H2> 16 </H2>
+     <H2> 10 </H2>
+     <H2> 8 </H2>
+     <H2> 2 </H2>
+
+     <H2> 5 </H2>
+     <H2> 8+9 </H2>
+     <H2> 17 </H2>
+     <H2> 2 </H2>
+     <H2> 4 </H2>
+     <H2> 9 </H2>
+  
+     <H2> 6 </H2>
+     <H2> 2+9 </H2>
+     <H2> 11 </H2>
+     <H2> 8 </H2>
+     <H2> 4 </H2>
+     <H2> 3 </H2>
+
+       </div>
+
+       <div id="Editar">
+        <H2> Escribe o sube:</H2>
+        <H3> Ejercicio </H3>
+        <br>
+        <textarea rows="1" cols="15" name="comment" form="usrform"></textarea>
+         o 
+        <button id="ej">Subir imagen</button>
+        <br>
+        <H3> Respuesta correcta </H3> 
+        <textarea rows="1" cols="15" name="comment" form="usrform"></textarea>
+
+        <br>      
+        <H3> Respuesta distractora </H3> 
+        <textarea rows="1" cols="15" name="comment" form="usrform"></textarea>
+
+        <br>  
+        <H3> Respuesta equivocada </H3> 
+        <textarea rows="1" cols="15" name="comment" form="usrform"></textarea>
+    
+        <br>  
+        <H3> Respuesta incorrecta </H3> 
+        <textarea rows="1" cols="15" name="comment" form="usrform"></textarea>
+  
+        <br> 
+        <button id="ed1">Editar</button>
+        <br>  
+
+      </div>
+        
+   
+    </div>
+       
+  </body> 
+</html> 	 

@@ -19,23 +19,20 @@
   }
 #overlay>#c1{
     background-color:white;
-    display:grid:
-    grid-template-rows: 30% 30% 40%;
-}
-  #text{
-    position: absolute;
+       position: absolute;
     top: 50%;
     left: 50%;
     width: 70%;
     height: 70%;
     font-size: 50px;
     background-color: white;
-    color: blue;
-    border-radius: 15px;
+        border-radius: 15px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-  }
-  
+    display:grid;
+    grid-template-rows: 30% 30% 40%;
+}
+
 /* ----------------Background animado-------------------------------*/
 body>header{
     /*

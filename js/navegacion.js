@@ -41,7 +41,14 @@ function off() {
   }); 
   
   
-  
+  //Control del codigo
+
+     $("nav>#ingresa").click(function(){
+
+ $("body>#overlay").css("display", "grid");
+  }); 
+
+   
   /* Creación de icono responsive */
     var c = document.getElementById("signos");
 

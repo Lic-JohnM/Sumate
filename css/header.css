@@ -41,6 +41,12 @@
     -ms-transform: translate(-50%,-50%);
     display:grid;
     grid-template-rows: 30% 30% 40%;
+
+    justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+    
 }
 #overlay>#c1>#enviarc{
      padding-left:5px;    

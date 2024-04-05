@@ -44,21 +44,20 @@
 
     justify-items: center;
   align-items: center;
-  justify-content: center;
   align-content: center;
     
 }
 
 #overlay>#c1>#c2{
     background-color:#f8e8fa;
-    font-size: 38px;
+    font-size: 50px;
      border-radius: 15px;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:18px;
-    padding-right:18px;
-    margin-left:40%;
-    padding-right:8px;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left:5%;
+
+    margin-left:45%;
+    padding-right:5%;
 
 
     color: #9D79B1;

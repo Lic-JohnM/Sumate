@@ -17,6 +17,11 @@
     cursor: pointer;
 
   }
+#overlay>#C1{
+    background-color:white;
+    display:grid:
+    grid-template-rows: 30% 30% 40%;
+}
   #text{
     position: absolute;
     top: 50%;

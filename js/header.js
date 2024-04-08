@@ -52,8 +52,6 @@ $(document).ready(function(){
 
       });
      
- 
-
    
    
     /* Oprimir boton de enviar*/

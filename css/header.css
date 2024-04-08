@@ -74,8 +74,8 @@
     grid-template-columns:1fr 1fr;
 }
 #overlay>#c1>#enviarc>input{
-    boder-bottom: 1px solid #9D79B1;
-    boder-left: none;
+    border-bottom: 1px solid #9D79B1;
+    border-left: none;
     border-right:none;
     border-top:none;
     font-size: 18px;
@@ -106,7 +106,7 @@
   
 }
 
-#overlay>#c1>#enviarc>volver{
+#overlay>#c1>#enviarc>#volver{
   
     margin-left: 25%;
     margin-right:25%;

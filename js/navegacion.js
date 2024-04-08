@@ -63,6 +63,8 @@ function off() {
         // Obtener el código ingresado
         var codigo = $("body>#overlay>#c1>#enviarc>input").val();
 
+       console.log("el codigo es"+codigo)
+
         // Si el código está vacío, no hacemos nada
         if (!codigo) {
             alert('Por favor ingresa un código.');

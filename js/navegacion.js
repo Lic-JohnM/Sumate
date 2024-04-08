@@ -159,7 +159,14 @@ function off() {
                      
               }); 
 
-          
+                      /*-------Botón de retorno -----*/
+
+              $("body>#overlay>#c1>#volver").click(function(){
+        // Generar la división de los cursos //
+              $("body>#overlay").css("display", "none");
+  
+                     
+              }); 
               /*-------Función de boton de  registro -----*/
 
               $("#fr").click(function(){

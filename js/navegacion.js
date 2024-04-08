@@ -59,9 +59,7 @@ function off() {
 
    /*Conexión con el servidor para redireccionar*/
 
-
-
-document.getElementById("body>#overlay>#c1>#enviarc>#verificarCodigo").addEventListener('click', function() {
+     $("body>#overlay>#c1>#enviarc>#verificarCodigo").click(function(){
     // Obtener el código que se ingresó, asumiendo que tienes un input con id "codigo"
     var codigo = document.getElementById('body>#overlay>#c1>#enviarc>#codigo').value;
 

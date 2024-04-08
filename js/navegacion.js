@@ -164,6 +164,7 @@ function off() {
               $("body>#overlay>#c1>#volver").click(function(){
         // Generar la división de los cursos //
               $("body>#overlay").css("display", "none");
+                 console.log("funciono");
   
                      
               }); 

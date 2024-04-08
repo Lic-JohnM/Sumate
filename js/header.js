@@ -96,6 +96,14 @@ $(document).ready(function(){
     });
 });
 
+  //Codigo para volver a la página principal
+   
+   document.getElementById("#volver").addEventListener('click', function() {
+    $("Body>#overlay").css("display", "none");
+   });
+
+
+   
    
     /* Oprimir boton de enviar*/
 

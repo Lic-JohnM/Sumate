@@ -74,7 +74,7 @@
     grid-template-columns:1fr 1fr;
 }
 #overlay>#c1>#enviarc>input{
-    boder-bottom: 1px solid #9D79B1
+    boder-bottom: 1px solid #9D79B1;
     boder-left: none;
     border-right:none;
     border-top:none;
@@ -92,19 +92,35 @@
 
 
 #overlay>#c1>#enviarc>a{
-    boder-radius: 8px;
+  
     margin-left: 25%;
     margin-right:25%;
     margin-top:5px;
     font-size: 18px;
     color: white;
     background-color:rgb(0,158,226);
-    padding-top:2px;
-     padding-bottom:2px;
-     padding-left:2px;
+    padding-top:10px;
+     padding-bottom:10px;
+     padding-left:25px;
      padding-right:2px;
   
 }
+
+#overlay>#c1>#enviarc>volver{
+  
+    margin-left: 25%;
+    margin-right:25%;
+    margin-top:5px;
+    font-size: 18px;
+    color: orange;
+    background-color:#FFD700;
+    padding-top:10px;
+     padding-bottom:10px;
+     padding-left:25px;
+     padding-right:25px;
+  
+}
+
 /* ----------------Background animado-------------------------------*/
 body>header{
     /*

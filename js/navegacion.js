@@ -61,7 +61,7 @@ function off() {
 
     $("body>#overlay>#c1>#enviarc>#verificarCodigo").click(function() {
         // Obtener el código ingresado
-        var codigo = $("body>#overlay>#c1>#enviarc>#codigo").val();
+        var codigo = $("body>#overlay>#c1>#enviarc>input").val();
 
         // Si el código está vacío, no hacemos nada
         if (!codigo) {

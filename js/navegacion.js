@@ -56,6 +56,65 @@ function off() {
               $("body>#overlay").css("display", "none");
                  console.log("funciono");            
               }); 
+
+   /*Conexión con el servidor para redireccionar*/
+
+
+
+document.getElementById("body>#overlay>#c1>#enviarc>#verificarCodigo").addEventListener('click', function() {
+    // Obtener el código que se ingresó, asumiendo que tienes un input con id "codigo"
+    var codigo = document.getElementById('body>#overlay>#c1>#enviarc>#codigo').value;
+
+    // Si el código está vacío, no hacemos nada
+    if (!codigo) {
+        alert('Por favor ingresa un código.');
+        return;
+    }
+
+    // Configurar la solicitud Fetch
+    fetch('verificar_codigo.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ codigo: codigo })
+    })
+    .then(response => {
+        // Verificar si la respuesta fue exitosa (status 200)
+        if (response.ok) {
+            // Parsear la respuesta JSON
+            return response.json();
+        }
+        // Si la respuesta no es exitosa, lanzar un error
+        throw new Error('La solicitud de verificación de código falló.');
+    })
+    .then(data => {
+        // Manejar los datos recibidos
+        if (data.existe) {
+            alert('El código existe en el servidor.');
+        } else {
+            alert('El código no existe en el servidor.');
+        }
+    })
+    .catch(error => {
+        // Capturar y manejar errores
+        console.error('Error al verificar el código:', error);
+        alert('Ocurrió un error al verificar el código. Por favor, intenta de nuevo más tarde.');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
    
   /* Creación de icono responsive */
     var c = document.getElementById("signos");

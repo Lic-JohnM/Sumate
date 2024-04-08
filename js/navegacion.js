@@ -48,6 +48,14 @@ function off() {
  $("body>#overlay").css("display", "grid");
   }); 
 
+
+     /*-------Botón de retorno -----*/
+
+  $("body>#overlay>#c1>#volver").click(function(){
+        // Generar la división de los cursos //
+              $("body>#overlay").css("display", "none");
+                 console.log("funciono");            
+              }); 
    
   /* Creación de icono responsive */
     var c = document.getElementById("signos");

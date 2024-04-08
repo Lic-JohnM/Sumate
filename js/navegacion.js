@@ -63,11 +63,16 @@ function off() {
         // Obtener el código ingresado
         var codigo = $("body>#overlay>#c1>#enviarc>input").val();
 
-       console.log("el codigo es"+codigo)
 
-        // Si el código está vacío, no hacemos nada
+
+
+          // Si el código está vacío, no hacemos nada
         if (!codigo) {
-            alert('Por favor ingresa un código.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Por favor ingresa un código.'
+            });
             return;
         }
 
@@ -86,9 +91,13 @@ function off() {
                 }
             },
             error: function(xhr, status, error) {
-                // Manejar errores
+               // Manejar errores
                 console.error('Error al verificar el código:', error);
-                alert('Ocurrió un error al verificar el código. Por favor, intenta de nuevo más tarde.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Ocurrió un error al verificar el código. Por favor, intenta de nuevo más tarde.'
+                });
             }
         });
     });
